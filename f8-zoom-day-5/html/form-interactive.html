@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Interactive</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <!-- Form title -->
+        <div class="form-heading-block">
+            <h1>YOUR PROFILE</h1>
+            <p>Enter information for your account!</p>
+        </div>
+
+        <!-- Form content -->
+        <form class="form-content-block" action="" autocomplete="off">
+            <div class="profile-picture-container">
+                <!-- Profile picture -->
+                <label class="avatar-label" for="avatar">
+                    <img class="avatar-image" src="../images/sample-img.jpg" alt="avatar">
+                </label>
+                <input type="file" name="avatar" id="avatar">
+            </div>
+
+            <!-- Display name -->
+            <div class="form-item">
+                <label for="display-name">Display name</label>
+                <input class="max-width" type="text" name="display-name" id="display-name" spellcheck="true" required>
+            </div>
+
+
+            <!-- Email -->
+            <div class="form-item">
+                <label for="email">Email</label>
+                <input class="max-width" type="text" name="email" id="email" spellcheck="true" required>
+            </div>
+
+            <!-- Phone number -->
+            <div class="form-item">
+                <label for="phone-number">Phone number</label>
+                <input class="max-width" type="text" name="phone-number" id="phone-number" spellcheck="true">
+            </div>
+
+            <!-- Password -->
+            <div class="form-item">
+                <label for="password">Password</label>
+                <input class="max-width" type="password" name="password" id="password" spellcheck="true" required>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="form-item">
+                <label for="confirm-password">Confirm Password</label>
+                <input class="max-width" type="password" name="confirm-password" id="confirm-password" spellcheck="true"
+                    required>
+            </div>
+
+            <!-- Date of birth -->
+            <div class="form-item">
+                <label for="DOB">Date of birth</label>
+                <input class="max-width" type="date" name="DOB" id="DOB" datetime-local>
+            </div>
+
+            <!-- Address -->
+            <div class="form-item">
+                <label for="address">Address</label>
+                <input class="max-width" type="text" name="address" id="address" spellcheck="true">
+            </div>
+
+            <!-- Gender -->
+            <div class="form-item">
+                <label>Gender</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">female</label>
+                <input type="radio" name="gender" id="others">
+                <label for="others">others</label>
+            </div>
+
+            <!-- Communication preference -->
+            <div class="form-item">
+                <label>Communication preference</label>
+                <input type="checkbox" name="communication-preference" id="newsletter">
+                <label for="newsletter">Subscribe to Newsletter</label><br>
+                <input type="checkbox" name="communication-preference" id="email-news">
+                <label for="email-news">Receive Promotional Emails</label><br>
+                <input type="checkbox" name="communication-preference" id="product-update">
+                <label for="product-update">Get Product Updates</label>
+            </div>
+            <div class="action-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
