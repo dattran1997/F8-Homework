@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+ul {
+    display: flex;
+    height: inherit;
+    transition: translate 1s ease;
+}
+
+li {
+    flex: 0 0 100%;
+    height: inherit;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.previous-btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 10;
+}
+
+.next-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 10;
+}

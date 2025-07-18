@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 29</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>All Products</h2>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="productsGrid" class="products-grid">
+                <!-- Product cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal hide">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="product-detail">
+                    <div class="product-images">
+                        <div class="main-image">
+                            <img id="modalImage" src="" alt="Product">
+                        </div>
+                        <div class="thumbnail-images">
+                            <!-- Thumbnail images will be added here -->
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h2 id="modalTitle"></h2>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span id="modalRating"></span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price" id="modalPrice"></span>
+                            <span class="original-price" id="modalOriginalPrice"></span>
+                            <span class="discount" id="modalDiscount"></span>
+                        </div>
+                        <p id="modalDescription"></p>
+                        <div class="product-meta">
+                            <div class="meta-item">
+                                <span class="label">Brand:</span>
+                                <span id="modalBrand"></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Category:</span>
+                                <span id="modalCategory"></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Stock:</span>
+                                <span id="modalStock"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

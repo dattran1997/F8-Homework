@@ -1,0 +1,29 @@
+.tab-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+
+    .tab-item {
+        display: block;
+        flex-grow: 1;
+        text-align: center;
+        line-height: 1.75;
+        padding: 1rem;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+
+    .tab-item.active {
+        background-color: blue;
+        color: white;
+    }
+
+    .tab-item:hover {
+        cursor: pointer;
+    }
+}
+
+.content-container {
+    padding: 1.5rem;
+    text-align: center;
+}
