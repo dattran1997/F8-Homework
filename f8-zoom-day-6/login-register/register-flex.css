@@ -1,0 +1,161 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0;
+  height: 100vh;
+}
+
+.main-content {
+  max-width: 800px;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #f9f7f7;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.main-content:has(input:focus) {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.form-heading-block {
+  text-align: center;
+}
+
+.form-heading-block h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2;
+  color: #112d4e;
+}
+
+.form-heading-block p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3f72af;
+}
+
+.form-content-block {
+  margin-top: 15px;
+}
+
+.field-container {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.form-item-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-item {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  font-size: 16px;
+  gap: 0.5rem;
+}
+
+.form-item input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #3f72af;
+}
+
+.form-item input:focus {
+  border: 1px solid #112d4e;
+}
+
+.form-item input:invalid {
+  border: 1px solid #be3d2a;
+}
+
+.form-item:nth-child(even) {
+  padding-right: 12px;
+}
+
+.form-item label:nth-child(1) {
+  width: 100%;
+  display: block;
+  line-height: 1.5;
+  color: #3f72af;
+}
+
+.form-item label:has(+ input:required)::after {
+  margin-left: 10px;
+  content: '*';
+  color: #be3d2a;
+}
+
+.max-width {
+  width: 100%;
+}
+
+.avatar-image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-picture-container {
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.avatar-label {
+  width: 300px;
+}
+
+.avatar-label:hover {
+  cursor: pointer;
+}
+
+.action-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.action-container button {
+  float: right;
+  padding: 12px 32px;
+  border-radius: 15px;
+  border: none;
+  background-color: #dbe2ef;
+  line-height: 1.5;
+}
+
+.action-container button:hover {
+  cursor: pointer;
+  background-color: #112d4e;
+  color: white;
+}
+
+.action-container .login-button {
+  text-decoration: none;
+  color: #112d4e;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  background-color: #dbe2ef;
+  min-width: 100px;
+  text-align: center;
+}
