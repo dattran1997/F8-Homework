@@ -2,8 +2,40 @@
   background-color: green;
 }
 
+.main-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  display: flex;
+  align-self: center;
+}
+
+.nav-bar li {
+  padding: 0.5rem 1rem;
+}
+
+.search-button {}
+
+.nav-action-container {
+  display: flex;
+  gap: 10px;
+}
+
 .hero-section {
+  display: flex;
   width: 100%;
   height: 300px;
   background-image: url(../images/slider-image.jpg)
+}
+
+.hero-section-content {
+  align-self: flex-end;
+  padding: 2rem;
 }
